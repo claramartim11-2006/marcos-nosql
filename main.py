@@ -1,13 +1,9 @@
-from pymongo import MongoClient
-from datetime import datetime
-import pandas as pd
 
-client = MongoClient("mongodb://root:rootpass@localhost:27017/")
-db = client["petshop"]
-colecao = db["atendimentos"]
+
+
 
 # limpa antes
-colecao.delete_many({})
+
 
 # insira os dados aqui
 dados = [
